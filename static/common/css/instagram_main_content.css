@@ -1,0 +1,281 @@
+/* Modal Popup */ 
+
+/* 
+ * Modal Box
+ */
+.con-popup-wrap{
+  background-color:rgba(0,0,0,.3); 
+  justify-content:center;
+  align-items:center; 
+  position:fixed; 
+  top:0;
+  left:0;
+  right:0;
+  bottom:0; 
+  display:none; 
+  padding:15px; 
+}
+
+/* 
+ * Modal Body
+ */
+.con-popup{
+  width:100%;  
+  height:90%;
+  max-width:1200px; 
+  border-radius:10px;
+  overflow:hidden; 
+  background-color:#264db5;
+  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
+}
+
+/* 
+ * Modal Head
+ */
+.con-popup-head{
+  width:100%;
+  height:50px;
+  display:flex; 
+  align-items:center;
+  justify-content:center;
+}
+
+/* 
+ * Modal Body (Content)
+ */
+.con-popup-body{                /* //���� */
+  width:100%;
+  height:100%;
+  background-color:#ffffff; /* //������ ������ ���� */
+}
+.con-body-content{              /* //���� ���� ������ ���� */
+  width:100%;
+  height:100%;
+  /* padding:10px; */             /* //�¿쿡 ������ ������ ���� ������ ������ ���� ��� */
+  display:inline-flex;
+}
+.con-body-titlebox{             /* //������ Ÿ��Ʋ ���� */
+  text-align:center;        /* //���� �߾����� */
+  width:100%;
+  height:40px;
+  margin-bottom:10px;       /* //����� ���� ���� */
+}
+.con-body-contentbox-left{      /* //������ ���� ���� */
+  word-break:break-word;    /* //�ܾ ©���� ���� */
+  overflow-y:auto;          /* //���ο�Ұ� ������ ���� ������ Ŭ ��� ��ũ�� ���� */
+  width:70%;
+  min-height:100px;          /* //�ּ� ���� */ 
+  max-height:100%;           /* //�ִ� ���� */
+  display:flex;
+  align-items:center;
+  justify-content:center;  
+  background-color: black;
+}
+
+.con-body-content-img{
+	width: 100%;
+	height:100%;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	object-fit: cover; 
+	
+}
+
+.con-body-content-img img{
+	width: 100%;
+	height:100%;
+	object-fit: cover; 
+	
+}
+
+
+.con-body-contentbox-right{      /* //������ ���� ���� */
+  word-break:break-word;    /* //�ܾ ©���� ���� */
+  /* overflow-y:auto; */          /* //���ο�Ұ� ������ ���� ������ Ŭ ��� ��ũ�� ���� */
+  width:500px;
+  min-height:100px;         /* //�ּ� ���� */
+  max-height:100%;         /* //�ִ� ���� */
+  display:flex;
+  flex-direction:column;
+  float: left;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.con-body-contentbox-user-profile{
+	width:100%;
+	height: 55px;
+	display:flex;
+	margin-top: 10px;
+	border-bottom: 1px solid rgb(239,239,239);
+	align-items:center;
+  	/* justify-content:center; */
+}
+
+.con-maintext_profile-img{
+	width: 30px;
+    height: 30px;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 0px 10px 0px 20px;
+    border-radius: 50%;
+}
+
+.con-maintext_profile-img img{
+	width: 30px;
+    height: 30px;
+}
+
+.con-body-contentbox-writer_content{
+	width:100%;
+	height: 20%;
+	overflow-y:auto;
+	display:flex;
+	flex-direction:column;
+	padding: 16px;
+	align-items:flex-start;
+  	justify-content:flex-start;
+  	overflow-y:auto;
+}
+.con-body-contentbox-comment{
+	width:100%;
+	height: 80%;
+	overflow-y:auto;
+	display:flex;
+	flex-direction:column;
+	padding: 16px;
+	align-items:flex-start;
+  	justify-content:flex-start;
+  	overflow-y:auto;
+}
+
+.con-body-contentbox-displaybox{
+	width:100%;
+	height: 100px;
+	display:flex;
+	align-items:center;
+  	justify-content:center;
+  	border-top: 1px solid rgb(239,239,239);
+}
+
+.con-body-contentbox-commentbox{
+	width:100%;
+	height: 55px;
+	padding: 5px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid rgb(239,239,239);
+}
+
+.con-body-contentbox-commentbox-form{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.commentbox-form-div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.commentbox-form-div-icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.commentbox-form-div-textarea{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.con-body-contentbox-commentbox-form .icon{
+	height: 25px;
+    margin: 0px 10px;
+}
+
+.con-body-contentbox-commentbox-form textarea{
+	width: 380px;
+	height: 18px;
+    margin: 0px 10px;
+    border: none;
+    resize: none;
+}
+
+.con-body-contentbox-commentbox-form textarea:focus{
+	outline:none;
+}
+
+.con-body-contentbox-commentbox-form .submit_btn{
+	width: 60px;
+	height: 30px;
+	padding: 0px, 5px, 0px, 5px;
+	border: none;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: transparent; 
+	color: rgb(0,149,246);
+}
+
+
+/* 
+ * Modal Body (Bottom)
+ */
+.con-popup-foot{                      /* //�ٸ� */
+  width:100%;
+  min-height:50px;
+  display:flex;
+  justify-content:center;         
+  align-items:center;
+}
+.con-pop-btn{ //������ ��ư
+  display:inline-flex;            /* //���ٷ� �����ϱ� ���� inline�Ӽ��� flex�Ӽ� ȥ�� */
+  width:50%;                      /* //2�� ��ư ���� 50% ���� */
+  height:100%;                    /* //50px */
+  justify-content:center;         /* //�������� */
+  align-items:center;             /* //�������� */
+  float:left;                     /* //������ġ */
+  color:#ffffff;                  /* //���ڻ� */
+  cursor:pointer;                 /* //���콺 ������ ȿ�� */
+}
+.con-pop-btn.confirm{                 /* //Ȯ�ι�ư */
+  border-right:1px solid #3b5fbf; /* //������ �� */
+  display:flex;
+  justify-content:center; 
+}
+
+.con-pop-btn.close{                 /* //â �ݱ� ��ư */
+  display:flex;
+  justify-content:center;
+}
+
+.comment_insert{
+	width:100%;
+	margin-bottom: 8px;
+	display: flex;
+}
+.comment_user{
+	font-weight: bold;
+	padding-right: 5px;
+}
+.comment_box{
+	width:90%;
+}
+.delete_button{
+	width:10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.comment_delete_img{
+	width:14px;
+	height:14px;
+	cursor: pointer;
+}
